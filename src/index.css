@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-transparent text-white font-sans overflow-x-hidden relative m-0 p-0;
+  }
+}
+
+/* Optional custom scrollbar */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #facc15;
+  border-radius: 9999px;
+}
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #facc15 rgba(255, 255, 255, 0.05);
+}
